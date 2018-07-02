@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/txtViewExtra"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/txtViewExtra"
+        android:id="@+id/txtViewMain"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="0"
+        android:textSize="30dp"
+        />
+    <LinearLayout
+        android:id="@+id/container"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:layout_constraintTop_toBottomOf="@id/txtViewMain"/>
+
+    <TextView
+        android:id="@+id/orientationTxtView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="portrait"/>
+
+</android.support.constraint.ConstraintLayout>
