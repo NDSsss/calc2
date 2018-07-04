@@ -20,7 +20,7 @@ public class Figures {
     String getText(){
         return text;
     }
-    Figures(String text,int type){
+    public Figures(String text,int type){
         this.text=text;
         this.type=type;
     }
